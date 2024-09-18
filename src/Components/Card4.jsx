@@ -10,6 +10,10 @@ import Box from "@mui/material/Box";
 export default function ImgMediaCard4() {
   const isSold = true; // Set to true for showing the sold status
 
+  const eventHandler = () => {
+    console.log("oft");
+  };
+
   return (
     <Box sx={{ position: "relative", width: 345 }}>
       <Card
@@ -31,20 +35,27 @@ export default function ImgMediaCard4() {
           image="https://assets.ajio.com/medias/sys_master/root/20240709/xUd7/668c6f1f6f60443f31adbc1a/-473Wx593H-461730986-purple-MODEL.jpg"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{ color: "brown", fontWeight: "bold" }}
+          >
             Karwat Kathi
           </Typography>
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+          <Typography variant="body2" sx={{ color: "brown" }}>
             <b>Silk </b>is a luxurious, smooth fabric known for its natural
             sheen and elegance, often used in high-quality sarees.
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" variant="contained" color="error">
+          <Button
+            size="small"
+            variant="contained"
+            color="error"
+            onClick={eventHandler}
+          >
             Order
-          </Button>
-          <Button size="small" color="success">
-            Learn More
           </Button>
         </CardActions>
       </Card>

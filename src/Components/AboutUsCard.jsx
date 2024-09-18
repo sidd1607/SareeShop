@@ -52,8 +52,8 @@ export default function AboutUs({ scrollToCollection }) {
 
         {/* Button triggers scroll */}
         <Button
-          variant="outlined"
-          color="success"
+          variant="text"
+          color="error"
           onClick={scrollToCollection} // Trigger scroll to collection
         >
           Explore Our Collection

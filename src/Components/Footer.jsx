@@ -3,6 +3,7 @@ import { Box, Typography, Grid, Link, IconButton } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import FmdGoodIcon from "@mui/icons-material/FmdGood";
 
 export default function Footer({ scrollToCollection }) {
   return (
@@ -20,12 +21,14 @@ export default function Footer({ scrollToCollection }) {
         {/* About Us Section */}
         <Grid item xs={12} sm={6} md={4}>
           <Typography variant="h6" gutterBottom>
-            About Us
+            <FmdGoodIcon /> {"  "}
+            Visit us
           </Typography>
           <Typography variant="body2">
-            We are a family-owned business specializing in beautiful <br />
-            handwoven sarees, crafted with care and love from artisans <br />
-            across India.
+            C-23, Colaba, Near BKC Building, Behind autoExpo <br />
+            Pin-10032 <br />
+            +91 9876543296 <br />
+            chetan.sharma@gmail.com
           </Typography>
         </Grid>
 

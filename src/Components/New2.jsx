@@ -32,6 +32,7 @@ const New2 = React.forwardRef((props, ref) => {
           fontStyle={"italic"}
           sx={{
             py: 3,
+            fontWeight: "bold",
           }}
         >
           Collections

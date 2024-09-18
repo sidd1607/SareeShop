@@ -42,7 +42,7 @@ const ContactForm = () => {
         width: "600",
         minHeight: "100vh",
         backgroundImage: `url(${backgroundImage})`,
-        backgroundAttachment: "fixed", // Parallax effect
+        backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundPosition: "center",
 
