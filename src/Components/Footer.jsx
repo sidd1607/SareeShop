@@ -82,6 +82,9 @@ export default function Footer({ scrollToCollection }) {
       <Box mt={4} textAlign="center">
         <Typography variant="body2" color="inherit">
           © {new Date().getFullYear()} Saree Store. All rights reserved.
+          <br />
+          <br />
+          <i>developed by siddhesh Naik</i>
         </Typography>
       </Box>
     </Box>
