@@ -136,7 +136,7 @@ export default function ImgMediaCard6() {
         open={snackbarOpen}
         autoHideDuration={6000}
         onClose={handleCloseSnackbar}
-        message="Order placed successfully"
+        message="Order placed successfully!"
         action={action}
       />
     </>
