@@ -14,7 +14,7 @@ export default function ImgMediaCard4() {
     <Box sx={{ position: "relative", width: 345 }}>
       <Card
         sx={{
-          maxWidth: 300,
+          maxWidth: 345,
           filter: isSold ? "grayscale(100%)" : "none", // Apply grayscale if sold
           pointerEvents: isSold ? "none" : "auto", // Disable interaction if sold
           position: "relative",
@@ -32,7 +32,7 @@ export default function ImgMediaCard4() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Silk
+            Karwat Kathi
           </Typography>
           <Typography variant="body2" sx={{ color: "text.secondary" }}>
             <b>Silk </b>is a luxurious, smooth fabric known for its natural

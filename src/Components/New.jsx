@@ -56,6 +56,7 @@ function BackgroundImageBox() {
           },
         }}
       >
+        {/* Adding animation to Welcome */}
         <Typography
           variant="h1"
           fontWeight={700}
@@ -72,10 +73,16 @@ function BackgroundImageBox() {
               md: "4rem", // Font size for desktops
               lg: "5rem", // Font size for large desktops
             },
+            // Adding the animation
+            opacity: 0,
+            transform: "translateY(50px)",
+            animation: "fadeUp 1s ease-out forwards",
           }}
         >
           Welcome
         </Typography>
+
+        {/* Adding animation to Chetan Sharma */}
         <Typography
           variant="h3"
           fontWeight={300}
@@ -92,21 +99,14 @@ function BackgroundImageBox() {
               md: "2rem", // Font size for desktops
               lg: "3rem", // Font size for large desktops
             },
+            // Adding the animation
+            opacity: 0,
+            transform: "translateY(50px)",
+            animation: "fadeUp 1.5s ease-out forwards", // Slightly delayed for a staggered effect
           }}
         >
           Chetan Sharma
         </Typography>
-        {/* <Button
-          variant="contained"
-          color="error"
-          sx={{
-            borderRadius: 5,
-            mx: 74,
-            my: 2,
-          }}
-        >
-          Contained
-        </Button> */}
       </Box>
     </Box>
   );
