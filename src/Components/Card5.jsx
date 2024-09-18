@@ -11,21 +11,55 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
+import Snackbar from "@mui/material/Snackbar";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function ImgMediaCard5() {
-  const [open, setOpen] = React.useState(false);
+  const [dialogOpen, setDialogOpen] = React.useState(false); // Dialog state
+  const [snackbarOpen, setSnackbarOpen] = React.useState(false); // Snackbar state
 
+  // Open the dialog
   const handleClickOpen = () => {
-    setOpen(true);
+    setDialogOpen(true);
   };
 
-  const handleClose = () => {
-    setOpen(false);
+  // Close the dialog
+  const handleCloseDialog = () => {
+    setDialogOpen(false);
   };
+
+  // Open the snackbar when "Order now" is clicked
+  const handleOrderNow = () => {
+    setDialogOpen(false); // Close dialog
+    setSnackbarOpen(true); // Show Snackbar
+  };
+
+  // Close the snackbar
+  const handleCloseSnackbar = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setSnackbarOpen(false);
+  };
+
+  // Snackbar action (UNDO button and close icon)
+  const action = (
+    <React.Fragment>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleCloseSnackbar}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
 
   return (
     <>
@@ -36,7 +70,7 @@ export default function ImgMediaCard5() {
             borderRadius: 2,
           }}
           component="img"
-          alt="green iguana"
+          alt="Silk saree"
           height="280"
           image="https://www.rajsilkvilla.com/cdn/shop/files/WhatsAppImage2024-01-17at22.12.39_1.jpg?v=1705590280&width=1946"
         />
@@ -65,37 +99,47 @@ export default function ImgMediaCard5() {
           </Button>
         </CardActions>
       </Card>
-      {/*dialogbox starts from here */}
+
+      {/* Dialog Box */}
       <React.Fragment>
         <Dialog
-          open={open}
+          open={dialogOpen}
           TransitionComponent={Transition}
           keepMounted
-          onClose={handleClose}
+          onClose={handleCloseDialog}
           aria-describedby="alert-dialog-slide-description"
           maxWidth="sm"
         >
-          <DialogTitle>{"Purchase this product? "}</DialogTitle>
+          <DialogTitle>{"Purchase this product?"}</DialogTitle>
           <DialogContent>
             <DialogContentText
               id="alert-dialog-slide-description"
               sx={{ color: "black" }}
             >
-              <b>ProductId:105 </b>
+              <b>ProductId:105</b>
               <br />
-              Please click on "Order Now" if want to Purchase!
+              Please click on "Order Now" if you want to purchase!
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button color="error" onClick={handleClose}>
+            <Button color="error" onClick={handleCloseDialog}>
               Check Out
             </Button>
-            <Button color="success" onClick={handleClose}>
+            <Button color="success" onClick={handleOrderNow}>
               Order now
             </Button>
           </DialogActions>
         </Dialog>
       </React.Fragment>
+
+      {/* Snackbar */}
+      <Snackbar
+        open={snackbarOpen}
+        autoHideDuration={6000}
+        onClose={handleCloseSnackbar}
+        message="Order placed successfully"
+        action={action}
+      />
     </>
   );
 }

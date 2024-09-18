@@ -25,10 +25,9 @@ export default function Footer({ scrollToCollection }) {
             Visit us
           </Typography>
           <Typography variant="body2">
-            C-23, Colaba, Near BKC Building, Behind autoExpo <br />
-            Pin-10032 <br />
+            C-23, Colaba, Near BKC Building Mk gandhi sq,
+            <br /> Behind autoExpo, Mumbai-10032 <br />
             +91 9876543296 <br />
-            chetan.sharma@gmail.com
           </Typography>
         </Grid>
 

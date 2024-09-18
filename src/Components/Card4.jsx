@@ -44,8 +44,9 @@ export default function ImgMediaCard4() {
             Karwat Kathi
           </Typography>
           <Typography variant="body2" sx={{ color: "brown" }}>
-            <b>Silk </b>is a luxurious, smooth fabric known for its natural
-            sheen and elegance, often used in high-quality sarees.
+            <b>ProductId:104 </b>Karwat Kathi is a luxurious, smooth fabric
+            known for its natural sheen and elegance, often used in high-quality
+            sarees.
           </Typography>
         </CardContent>
         <CardActions>
