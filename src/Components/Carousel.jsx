@@ -12,7 +12,7 @@ export default function SmallCarousel() {
     slidesToShow: 4, // Show 4 slides at once
     slidesToScroll: 1, // Scroll one slide at a time
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Auto slide every 3 seconds
+    autoplaySpeed: 2000, // Auto slide every 3 seconds
     arrows: true, // Show navigation arrows
 
     responsive: [
