@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+import "./App.css";
+import AboutUsCard from "./Components/AboutUsCard";
+import ContactForm from "./Components/ContactForm";
+import New from "./Components/New";
+import New2 from "./Components/New2";
+import Footer from "./Components/Footer";
+import Carousel from "./Components/Carousel";
 
 function App() {
+  const collectionRef = useRef(null);
+
+  const scrollToCollection = () => {
+    if (collectionRef.current) {
+      collectionRef.current.scrollIntoView({
+        behavior: "smooth", // Smooth scrolling effect
+        block: "start", // Scroll to the start of the element
+      });
+    }
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App ">
+      <New />
+      <New2 ref={collectionRef} />
+      <ContactForm />
+      <AboutUsCard scrollToCollection={scrollToCollection} />
+      <Carousel />
+      <Footer scrollToCollection={scrollToCollection} />
     </div>
   );
 }
