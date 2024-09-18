@@ -14,6 +14,7 @@ export default function SmallCarousel() {
     autoplay: true, // Enable autoplay
     autoplaySpeed: 3000, // Auto slide every 3 seconds
     arrows: true, // Show navigation arrows
+
     responsive: [
       {
         breakpoint: 1024, // For tablets and smaller screens
@@ -45,50 +46,50 @@ export default function SmallCarousel() {
     <Box sx={{ width: "80%", margin: "auto", paddingTop: 4 }}>
       <Slider {...settings}>
         {/* Slide 1 */}
-        <Card sx={{ maxWidth: 250 }}>
+        <Card sx={{ maxWidth: 280, pr: 2 }}>
           <CardMedia
             component="img"
-            height="200"
+            height="220"
             image="https://media.istockphoto.com/id/1187354904/photo/shinny-indian-bridal-weeding-dress.jpg?s=612x612&w=0&k=20&c=Opb8t3Tv5oSud9FklcMFk4DbbohtoEsGNCxfnYiQwhE="
             alt="Picture 1"
           />
         </Card>
 
         {/* Slide 2 */}
-        <Card sx={{ maxWidth: 250 }}>
+        <Card sx={{ maxWidth: 280 }}>
           <CardMedia
             component="img"
-            height="200"
+            height="220"
             image="https://media.istockphoto.com/id/1192229073/photo/little-wedding-shop-on-a-night-market-in-jaipur.jpg?s=612x612&w=0&k=20&c=Px2_sN4_CuMQR6rtjhvZpj0-Gy3kW1FytH5c0dZFWRI="
             alt="Picture 2"
           />
         </Card>
 
         {/* Slide 3 */}
-        <Card sx={{ maxWidth: 250 }}>
+        <Card sx={{ maxWidth: 280 }}>
           <CardMedia
             component="img"
-            height="200"
+            height="220"
             image="https://media.istockphoto.com/id/1331734513/photo/view-of-indian-woman-fashion-and-tradtional-wear-sarees-in-shop-display.jpg?s=612x612&w=0&k=20&c=PxIU-OUQUZ-h7bBibATmXk_9HLK72w8j4a9wyAvppfk="
             alt="Picture 3"
           />
         </Card>
 
         {/* Slide 4 */}
-        <Card sx={{ maxWidth: 250 }}>
+        <Card sx={{ maxWidth: 280 }}>
           <CardMedia
             component="img"
-            height="200"
+            height="220"
             image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRasQBB8nqKOtwQtSjeGu__pGMl_bsha4uE3g&s"
             alt="Picture 4"
           />
         </Card>
 
         {/* Slide 5 */}
-        <Card sx={{ maxWidth: 250 }}>
+        <Card sx={{ maxWidth: 280 }}>
           <CardMedia
             component="img"
-            height="200"
+            height="220"
             image="https://thumbs.dreamstime.com/b/vadodara-india-october-indian-women-seen-shopping-traditional-indian-saris-saree-shop-concept-indian-economy-316017298.jpg"
             alt="Picture 5"
           />
