@@ -40,8 +40,8 @@ export default function AboutUs({ scrollToCollection }) {
         </Typography>
 
         <Typography variant="body1" paragraph>
-          Our founder, <b>Jane Doe</b>, has a passion for preserving the art of
-          saree-making, blending traditional techniques with contemporary
+          Our founder, <b>Chetan Sharma</b>, has a passion for preserving the
+          art of saree-making, blending traditional techniques with contemporary
           designs.
         </Typography>
 

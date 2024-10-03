@@ -6,6 +6,9 @@ import ImgMediaCard3 from "./Card3";
 import ImgMediaCard4 from "./Card4";
 import ImgMediaCard5 from "./Card5";
 import ImgMediaCard6 from "./Card6";
+import ImgMediaCard7 from "./Card7";
+import ImgMediaCard8 from "./Card8";
+import ImgMediaCard9 from "./Card9";
 
 // Forward the ref to the Box component in New2
 const New2 = React.forwardRef((props, ref) => {
@@ -68,6 +71,16 @@ const New2 = React.forwardRef((props, ref) => {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <ImgMediaCard6 />
+          </Grid>
+          {/* Row 3 */}
+          <Grid item xs={12} sm={6} md={4}>
+            <ImgMediaCard7 />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <ImgMediaCard8 />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <ImgMediaCard9 />
           </Grid>
         </Grid>
       </Box>

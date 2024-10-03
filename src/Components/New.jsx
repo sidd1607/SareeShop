@@ -79,7 +79,7 @@ function BackgroundImageBox() {
             animation: "fadeUp 1s ease-out forwards",
           }}
         >
-          Welcome
+          Saree Bazar
         </Typography>
 
         {/* Adding animation to Chetan Sharma */}
@@ -95,9 +95,9 @@ function BackgroundImageBox() {
 
             fontSize: {
               xs: "1rem", // Font size for small screens
-              sm: "1.5rem", // Font size for tablets
-              md: "2rem", // Font size for desktops
-              lg: "3rem", // Font size for large desktops
+              sm: "1rem", // Font size for tablets
+              md: "1.5rem", // Font size for desktops
+              lg: "2rem", // Font size for large desktops
             },
             // Adding the animation
             opacity: 0,
@@ -105,7 +105,7 @@ function BackgroundImageBox() {
             animation: "fadeUp 1.5s ease-out forwards", // Slightly delayed for a staggered effect
           }}
         >
-          Chetan Sharma
+          A brand by Chetan Sharma
         </Typography>
       </Box>
     </Box>
