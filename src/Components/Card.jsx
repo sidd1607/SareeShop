@@ -15,11 +15,14 @@ import Snackbar from "@mui/material/Snackbar";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 
+// Transition for dialog box
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function ImgMediaCard() {
+// Updated component with tags
+export default function ImgMediaCard({ tags = ["paithani", "traditional"] }) {
+  // Tags as props
   const [dialogOpen, setDialogOpen] = React.useState(false); // Dialog state
   const [snackbarOpen, setSnackbarOpen] = React.useState(false); // Snackbar state
 
@@ -47,7 +50,7 @@ export default function ImgMediaCard() {
     setSnackbarOpen(false);
   };
 
-  // Snackbar action (UNDO button and close icon)
+  // Snackbar action (close button)
   const action = (
     <React.Fragment>
       <IconButton

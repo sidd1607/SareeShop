@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-export default function ImgMediaCard4() {
+export default function ImgMediaCard4({ tags = ["karwat", "traditional"] }) {
   const isSold = true; // Set to true for showing the sold status
 
   const eventHandler = () => {

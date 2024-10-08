@@ -6,6 +6,7 @@ import New from "./Components/New";
 import New2 from "./Components/New2";
 import Footer from "./Components/Footer";
 import Carousel from "./Components/Carousel";
+import ResponsiveAppBar from "./Components/ResponsiveAppBar";
 
 function App() {
   const collectionRef = useRef(null);
@@ -20,6 +21,7 @@ function App() {
   };
   return (
     <div className="App ">
+      <ResponsiveAppBar />
       <New />
       <New2 ref={collectionRef} />
       <ContactForm />

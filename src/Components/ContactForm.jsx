@@ -37,86 +37,89 @@ const ContactForm = () => {
   };
 
   return (
-    <Box
-      sx={{
-        width: "600",
-        minHeight: "100vh",
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundAttachment: "fixed",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-
-        p: 4,
-      }}
-    >
-      <Container
-        maxWidth="sm"
+    <section id="contact-section">
+      <Box
+        id="contact"
         sx={{
-          backgroundColor: "rgba(255, 255, 255, 1)",
+          width: "600",
+          minHeight: "100vh",
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+
           p: 4,
-          borderRadius: 2,
-          mt: 20,
         }}
       >
-        <Typography variant="h4" sx={{ mb: 4 }} textAlign="center">
-          Contact Us
-        </Typography>
-        <form onSubmit={handleSubmit}>
-          <TextField
-            fullWidth
-            label="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            sx={{ mb: 2 }}
-            required
-          />
-          <TextField
-            fullWidth
-            label="Mobile Number"
-            name="mobile"
-            value={formData.mobile}
-            onChange={handleChange}
-            sx={{ mb: 2 }}
-            required
-          />
-          <TextField
-            fullWidth
-            label="Product ID"
-            name="productId"
-            value={formData.productId}
-            onChange={handleChange}
-            sx={{
-              mb: 2,
-            }}
-            required
-          />
-          <Button
-            variant="contained"
-            color="primary"
-            type="submit"
-            fullWidth
-            sx={{ fontSize: { xs: "0.9rem", sm: "1rem" } }}
-          >
-            Submit
-          </Button>
-        </form>
-      </Container>
-
-      {/* Popup Dialog */}
-      <Dialog open={open} onClose={handleClose}>
-        <DialogContent>
-          <Typography variant="h6" align="center">
-            Thanks for connecting!
+        <Container
+          maxWidth="sm"
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 1)",
+            p: 4,
+            borderRadius: 2,
+            mt: 20,
+          }}
+        >
+          <Typography variant="h4" sx={{ mb: 4 }} textAlign="center">
+            Contact Us
           </Typography>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Close
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </Box>
+          <form onSubmit={handleSubmit}>
+            <TextField
+              fullWidth
+              label="Name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              sx={{ mb: 2 }}
+              required
+            />
+            <TextField
+              fullWidth
+              label="Mobile Number"
+              name="mobile"
+              value={formData.mobile}
+              onChange={handleChange}
+              sx={{ mb: 2 }}
+              required
+            />
+            <TextField
+              fullWidth
+              label="Product ID"
+              name="productId"
+              value={formData.productId}
+              onChange={handleChange}
+              sx={{
+                mb: 2,
+              }}
+              required
+            />
+            <Button
+              variant="contained"
+              color="primary"
+              type="submit"
+              fullWidth
+              sx={{ fontSize: { xs: "0.9rem", sm: "1rem" } }}
+            >
+              Submit
+            </Button>
+          </form>
+        </Container>
+
+        {/* Popup Dialog */}
+        <Dialog open={open} onClose={handleClose}>
+          <DialogContent>
+            <Typography variant="h6" align="center">
+              Thanks for connecting!
+            </Typography>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose} color="primary">
+              Close
+            </Button>
+          </DialogActions>
+        </Dialog>
+      </Box>
+    </section>
   );
 };
 

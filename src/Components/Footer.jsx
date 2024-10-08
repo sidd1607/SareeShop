@@ -1,11 +1,12 @@
 import * as React from "react";
-import { Box, Typography, Grid, Link, IconButton } from "@mui/material";
+import { Box, Typography, Grid, IconButton } from "@mui/material";
+import { Link as ScrollLink } from "react-scroll"; // Import Link from react-scroll
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 
-export default function Footer({ scrollToCollection }) {
+export default function Footer() {
   return (
     <Box
       sx={{
@@ -25,8 +26,8 @@ export default function Footer({ scrollToCollection }) {
             Visit us
           </Typography>
           <Typography variant="body2">
-            C-23, Colaba, Near BKC Building Mk gandhi sq,
-            <br /> Behind autoExpo, Mumbai-10032 <br />
+            C-23, Colaba, Near BKC Building Mk Gandhi Sq,
+            <br /> Behind AutoExpo, Mumbai-10032 <br />
             +91 9876543296 <br />
           </Typography>
         </Grid>
@@ -37,18 +38,58 @@ export default function Footer({ scrollToCollection }) {
             Quick Links
           </Typography>
           <Box display="flex" flexDirection="column">
-            <Link href="#" color="inherit" underline="hover">
+            <ScrollLink
+              to="home-section"
+              smooth={true}
+              duration={800}
+              offset={-70}
+              style={{
+                color: "inherit",
+                cursor: "pointer",
+                marginBottom: "10px",
+              }}
+            >
               Home
-            </Link>
-            <Link href="#" color="inherit" underline="hover">
+            </ScrollLink>
+            <ScrollLink
+              to="collections-section"
+              smooth={true}
+              duration={800}
+              offset={-70}
+              style={{
+                color: "inherit",
+                cursor: "pointer",
+                marginBottom: "10px",
+              }}
+            >
               Collections
-            </Link>
-            <Link href="#" color="inherit" underline="hover">
+            </ScrollLink>
+            <ScrollLink
+              to="about-us-section"
+              smooth={true}
+              duration={800}
+              offset={-70}
+              style={{
+                color: "inherit",
+                cursor: "pointer",
+                marginBottom: "10px",
+              }}
+            >
               About Us
-            </Link>
-            <Link href="#" color="inherit" underline="hover">
+            </ScrollLink>
+            <ScrollLink
+              to="contact-section"
+              smooth={true}
+              duration={800}
+              offset={-70}
+              style={{
+                color: "inherit",
+                cursor: "pointer",
+                marginBottom: "10px",
+              }}
+            >
               Contact Us
-            </Link>
+            </ScrollLink>
           </Box>
         </Grid>
 

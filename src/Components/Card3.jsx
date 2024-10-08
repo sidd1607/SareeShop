@@ -19,7 +19,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function ImgMediaCard3() {
+export default function ImgMediaCard3({ tags = ["zaari", "traditional"] }) {
   const [dialogOpen, setDialogOpen] = React.useState(false); // Dialog state
   const [snackbarOpen, setSnackbarOpen] = React.useState(false); // Snackbar state
 
