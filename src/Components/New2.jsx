@@ -104,9 +104,16 @@ const New2 = React.forwardRef((props, ref) => {
               ))
             ) : (
               <img
-                style={{ height: 400, paddingBottom: 100, paddingTop: 50 }}
+                style={{
+                  width: "100%", // Makes the image take up 100% of the container width
+                  maxWidth: "600px", // Sets the maximum width for the image (you can adjust this value as needed)
+                  height: "auto", // Ensures that the height adjusts proportionally to maintain the aspect ratio
+                  paddingBottom: "20px", // Adjusted padding for better spacing
+                  paddingTop: "20px", // Adjusted padding for better spacing
+                  objectFit: "contain", // Ensures the entire image is displayed within the container
+                }}
                 src="https://cdn.dribbble.com/users/1104860/screenshots/10519347/media/aa9e1cc2969d3706ae23b0f47f40d0d8.gif"
-                alt=""
+                alt="Responsive animation"
               />
             )}
           </Grid>
