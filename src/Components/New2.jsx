@@ -9,18 +9,22 @@ import ImgMediaCard6 from "./Card6";
 import ImgMediaCard7 from "./Card7";
 import ImgMediaCard8 from "./Card8";
 import ImgMediaCard9 from "./Card9";
+import ImgMediaCard10 from "./Card10";
+import ImgMediaCard11 from "./Card11";
 
 // Define a list of cards with their metadata (tags)
 const cardData = [
   { id: 1, component: <Card />, tags: ["paithani", "traditional"] },
-  { id: 2, component: <ImgMediaCard2 />, tags: ["silk", "summer"] },
-  { id: 3, component: <ImgMediaCard3 />, tags: ["zaari", "festive"] },
-  { id: 4, component: <ImgMediaCard4 />, tags: ["karwat", "casual"] },
-  { id: 5, component: <ImgMediaCard5 />, tags: ["silk", "party"] },
-  { id: 6, component: <ImgMediaCard6 />, tags: ["cotton", "daily wear"] },
-  { id: 7, component: <ImgMediaCard7 />, tags: ["silk", "luxury"] },
-  { id: 8, component: <ImgMediaCard8 />, tags: ["cotton", "workwear"] },
-  { id: 9, component: <ImgMediaCard9 />, tags: ["silk", "wedding"] },
+  { id: 2, component: <ImgMediaCard2 />, tags: ["silk"] },
+  { id: 3, component: <ImgMediaCard3 />, tags: ["zaari"] },
+  { id: 4, component: <ImgMediaCard4 />, tags: ["karwat"] },
+  { id: 5, component: <ImgMediaCard5 />, tags: ["silk"] },
+  { id: 6, component: <ImgMediaCard6 />, tags: ["Banarasi"] },
+  { id: 7, component: <ImgMediaCard7 />, tags: ["Chanderi"] },
+  { id: 8, component: <ImgMediaCard8 />, tags: ["bandhani"] },
+  { id: 9, component: <ImgMediaCard9 />, tags: ["south"] },
+  { id: 10, component: <ImgMediaCard10 />, tags: ["south"] },
+  { id: 11, component: <ImgMediaCard11 />, tags: ["paithani"] },
 ];
 
 // Forward the ref to the Box component in New2

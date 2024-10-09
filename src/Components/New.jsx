@@ -77,7 +77,7 @@ function BackgroundImageBox() {
               // Adding the animation
               opacity: 0,
               transform: "translateY(50px)",
-              animation: "fadeUp 1s ease-out forwards",
+              animation: "fadeUp 2s ease-out forwards",
             }}
           >
             Saree Bazar
@@ -103,7 +103,7 @@ function BackgroundImageBox() {
               // Adding the animation
               opacity: 0,
               transform: "translateY(50px)",
-              animation: "fadeUp 1.5s ease-out forwards", // Slightly delayed for a staggered effect
+              animation: "fadeUp 2.5s ease-out forwards", // Slightly delayed for a staggered effect
             }}
           >
             A brand by Chetan Sharma

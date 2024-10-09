@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-export default function ImgMediaCard8() {
+export default function ImgMediaCard8({ tags = ["bandhani"] }) {
   const isSold = true; // Set to true for showing the sold status
 
   const eventHandler = () => {

@@ -19,9 +19,9 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function ImgMediaCard6({ tags = ["Banarasi"] }) {
-  const [dialogOpen, setDialogOpen] = React.useState(false);
-  const [snackbarOpen, setSnackbarOpen] = React.useState(false);
+export default function ImgMediaCard11({ tags = ["paithani"] }) {
+  const [dialogOpen, setDialogOpen] = React.useState(false); // Dialog state
+  const [snackbarOpen, setSnackbarOpen] = React.useState(false); // Snackbar state
 
   // Open the dialog
   const handleClickOpen = () => {
@@ -36,7 +36,7 @@ export default function ImgMediaCard6({ tags = ["Banarasi"] }) {
   // Open the snackbar when "Order now" is clicked
   const handleOrderNow = () => {
     setDialogOpen(false); // Close dialog
-    setSnackbarOpen(true); // Open snackbar
+    setSnackbarOpen(true); // Show Snackbar
   };
 
   // Close the snackbar
@@ -70,9 +70,9 @@ export default function ImgMediaCard6({ tags = ["Banarasi"] }) {
             borderRadius: 2,
           }}
           component="img"
-          alt="Banarasi saree"
+          alt="Silk saree"
           height="280"
-          image="https://i.pinimg.com/originals/16/17/dd/1617dd525dba0a5d13129ff5281a8ff9.jpg"
+          image="https://www.jyothisareemandir.com/cdn/shop/files/GPS67_3.jpg?v=1713515090&width=1946"
         />
         <CardContent>
           <Typography
@@ -81,11 +81,11 @@ export default function ImgMediaCard6({ tags = ["Banarasi"] }) {
             component="div"
             sx={{ color: "brown", fontWeight: "bold" }}
           >
-            Banarasi
+            Paithani
           </Typography>
           <Typography variant="body2" sx={{ color: "brown" }}>
-            <b>ProductId:106</b> Banarasi is a luxurious, smooth fabric known
-            for its natural sheen and elegance, often used in high-quality
+            <b>ProductId:111 </b>Paithani sarees are luxurious, smooth fabric
+            known for its natural sheen and elegance, often used in high-quality
             sarees.
           </Typography>
         </CardContent>
@@ -101,35 +101,37 @@ export default function ImgMediaCard6({ tags = ["Banarasi"] }) {
         </CardActions>
       </Card>
 
-      {/* Dialog */}
-      <Dialog
-        open={dialogOpen}
-        TransitionComponent={Transition}
-        keepMounted
-        onClose={handleCloseDialog}
-        aria-describedby="alert-dialog-slide-description"
-        maxWidth="sm"
-      >
-        <DialogTitle>{"Purchase this product?"}</DialogTitle>
-        <DialogContent>
-          <DialogContentText
-            id="alert-dialog-slide-description"
-            sx={{ color: "black" }}
-          >
-            <b>ProductId:106</b>
-            <br />
-            Please click on "Order Now" if you want to purchase!
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button color="error" onClick={handleCloseDialog}>
-            Check Out
-          </Button>
-          <Button color="success" onClick={handleOrderNow}>
-            Order now
-          </Button>
-        </DialogActions>
-      </Dialog>
+      {/* Dialog Box */}
+      <React.Fragment>
+        <Dialog
+          open={dialogOpen}
+          TransitionComponent={Transition}
+          keepMounted
+          onClose={handleCloseDialog}
+          aria-describedby="alert-dialog-slide-description"
+          maxWidth="sm"
+        >
+          <DialogTitle>{"Purchase this product?"}</DialogTitle>
+          <DialogContent>
+            <DialogContentText
+              id="alert-dialog-slide-description"
+              sx={{ color: "black" }}
+            >
+              <b>ProductId:111</b>
+              <br />
+              Please click on "Order Now" if you want to purchase!
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button color="error" onClick={handleCloseDialog}>
+              Check Out
+            </Button>
+            <Button color="success" onClick={handleOrderNow}>
+              Order now
+            </Button>
+          </DialogActions>
+        </Dialog>
+      </React.Fragment>
 
       {/* Snackbar */}
       <Snackbar
