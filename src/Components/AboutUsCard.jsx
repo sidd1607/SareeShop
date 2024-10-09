@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Box, Typography, Button } from "@mui/material";
+import fo from "../imges/fo.jpg";
 
 export default function AboutUs({ scrollToCollection }) {
   return (
@@ -19,10 +20,10 @@ export default function AboutUs({ scrollToCollection }) {
         {/* Founder Image */}
         <Box
           component="img"
-          src="https://static01.nyt.com/images/2018/09/26/business/26INSTAGRAM01/merlin_144272775_3bb72b7b-6149-4adf-b4d0-8cb95dcc3ca1-articleLarge.jpg?quality=75&auto=webp&disable=upscale" // Replace with actual image
+          src={fo} // Use the imported image
           alt="Founder"
           sx={{
-            width: { xs: "100%", md: "40%" },
+            width: { xs: "80%", md: "40%" },
             borderRadius: "8px",
             marginBottom: { xs: 2, md: 0 },
             marginRight: { md: 4 },
