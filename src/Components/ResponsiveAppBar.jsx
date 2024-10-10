@@ -52,8 +52,11 @@ function ResponsiveAppBar() {
     <AppBar
       position="absolute"
       sx={{
-        backgroundColor: "transparent",
-        boxShadow: "none",
+        // backgroundColor: "transparent ",
+        // boxShadow: "none",
+        backgroundColor: "rgba(0, 0, 0, 0.5)", // Black background with 50% transparency
+        boxShadow: "none", // No shadow
+        border: "none",
         animation: `${slideDown} 1s ease-in-out`, // Apply the slide-down animation
       }}
     >

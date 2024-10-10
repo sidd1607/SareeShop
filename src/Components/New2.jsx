@@ -1,5 +1,6 @@
-import * as React from "react";
-import { Box, Typography, Grid, TextField } from "@mui/material";
+import React from "react";
+import { Box, Typography, Grid, TextField, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import Card from "./Card";
 import ImgMediaCard2 from "./Card2";
 import ImgMediaCard3 from "./Card3";
@@ -32,6 +33,8 @@ const New2 = React.forwardRef((props, ref) => {
   const [searchQuery, setSearchQuery] = React.useState(""); // For search input
   const [filteredCards, setFilteredCards] = React.useState(cardData); // To store the filtered cards
 
+  const navigate = useNavigate(); // Hook to navigate to different pages
+
   // Handle search input change and filter cards
   const handleSearchChange = (e) => {
     const query = e.target.value.toLowerCase();
@@ -42,6 +45,11 @@ const New2 = React.forwardRef((props, ref) => {
       card.tags.some((tag) => tag.toLowerCase().includes(query))
     );
     setFilteredCards(filtered);
+  };
+
+  // Navigate to the categories page
+  const OpenCatagory = () => {
+    navigate("/categories"); // Navigates to the /categories page
   };
 
   return (
@@ -121,6 +129,24 @@ const New2 = React.forwardRef((props, ref) => {
               />
             )}
           </Grid>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginTop: 7,
+              paddingRight: 10,
+            }}
+          >
+            <Button
+              size="small"
+              variant="text"
+              color="error"
+              onClick={OpenCatagory}
+            >
+              View More...
+            </Button>
+          </Box>
         </Box>
       </Box>
     </section>
