@@ -2,26 +2,27 @@ import React, { useState } from "react";
 import { Box, Typography, Grid, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import ArrowBackIcon from "@mui/icons-material/ArrowBack"; // Import the back arrow icon
+import Paithani from "./Cat/Paithani";
 
 // Category component placeholders
-const Paithani = () => (
-  <Box
-    sx={{
-      padding: 4,
-      textAlign: "center",
-      backgroundColor: "#f9f9f9",
-      borderRadius: 2,
-      boxShadow: 2,
-    }}
-  >
-    <Typography variant="h5" sx={{ fontWeight: "bold" }}>
-      Paithani Collection
-    </Typography>
-    <Typography variant="body1" sx={{ mt: 1 }}>
-      Explore our beautiful Paithani collection!
-    </Typography>
-  </Box>
-);
+// const Paithani = () => (
+//   <Box
+//     sx={{
+//       padding: 4,
+//       textAlign: "center",
+//       backgroundColor: "#f9f9f9",
+//       borderRadius: 2,
+//       boxShadow: 2,
+//     }}
+//   >
+//     <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+//       Paithani Collection
+//     </Typography>
+//     <Typography variant="body1" sx={{ mt: 1 }}>
+//       Explore our beautiful Paithani collection!
+//     </Typography>
+//   </Box>
+// );
 const Bandhani = () => <div>Bandhani Collection</div>;
 const Karwatkathi = () => <div>Karwatkathi Collection</div>;
 const Nauvari = () => <div>Nauvari Collection</div>;
